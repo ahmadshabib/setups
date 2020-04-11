@@ -15,7 +15,6 @@ Should be done after connecting to EC2 instance or through browser.
 * select **Add Storage**
 * change size to preferred (I use 100GB for our large enterprise builds)
 * select **Add Tags**
-* add key=Type, value=Jenkins (optional step)
 * select **Configure Security Group**
 * add rule *HTTPS*
 * add rule *Custom TCP for port 9443*
