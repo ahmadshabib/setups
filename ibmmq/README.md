@@ -28,7 +28,7 @@ Should be done after connecting to EC2 instance or through browser.
 ## Deploy IBM® MQ
 Login to the instance using the ssh command mentioned above. Then run:
 ```bash
-wget --no-cache https://raw.githubusercontent.com/ashabib/setups/master/ibmmq/setup.sh && chmod +x setup.sh
+wget --no-cache https://raw.githubusercontent.com/ahmadshabib/setups/master/ibmmq/setup.sh && chmod +x setup.sh
 ```
 Now run setup with -m flag to specify the Queue manager name(Default is QM1):
 ```bash

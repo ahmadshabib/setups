@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
+set -v
 
-QUEUE_MANAGER_NAME=QM1
+QUEUE_MANAGER_NAME="QM1"
+USAGE=USAGE="[options]\n\nOptions:\n
+\t-h Help show this message and exit\n
+\t-n|--queuemanager QueueManagerName   Name of the queue manager created\n
+"
 
-OPTS=`getopt -o m: --long queuemanager: -n 'parse-options' -- "$@"`
+OPTS=`getopt -o m:h --long queuemanager:help -n 'parse-options' -- "$@"`
 if [ $? != 0 ] ; then echo "Failed parsing options." >&2 ; exit 1 ; fi
 
 eval set -- "$OPTS"
